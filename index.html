@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0px;
+      }
+
+      .glass {
+        width: 100dvw;
+        height: 100dvh;
+        background: #b3e5fc;
+        padding: 0px 50px;
+      }
+
+      .inner_glass {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #81d4fa;
+      }
+
+      .kelly {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        overflow: hidden;
+        animation: fill 1s ease-out forwards;
+      }
+
+      .head {
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        background-color: #fff8e7;
+        top: 0;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+
+      .head-bottom {
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        bottom: 0;
+        background: linear-gradient(to bottom, #f2eacd 0%, #d7c58c 100%);
+      }
+
+      .layer1 {
+        width: 100%;
+        height: 200px;
+        background: #ffe100;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+
+      .layer2 {
+        width: 100%;
+        height: 200px;
+        background: #ffd800;
+      }
+
+      .layer3 {
+        width: 100%;
+        height: 200px;
+        background: #ffd000;
+      }
+
+      .layer4 {
+        width: 100%;
+        height: 200px;
+        background: #f5c800;
+      }
+
+      .haholula {
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation:
+          scaleup 0.6s ease-out 1s forwards,
+          float 2s ease-in-out 1.6s infinite;
+        z-index: 100;
+        font-family: "Pretendard";
+        font-size: 100px;
+        color: white;
+        text-shadow:
+          0 0 10px rgba(0, 0, 0, 0.25),
+          0 0 10px rgba(0, 0, 0, 0.4);
+        white-space: nowrap;
+      }
+
+      @keyframes scaleup {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+      @keyframes fill {
+        from {
+          height: 0%;
+        }
+        to {
+          height: 100%;
+        }
+      }
+
+      @keyframes float {
+        0% {
+          transform: translate(-50%, -50%);
+        }
+
+        50% {
+          transform: translate(-50%, -65%);
+        }
+
+        100% {
+          transform: translate(-50%, -50%);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="glass">
+      <div class="inner_glass">
+        <div class="haholula">주현아 Kelly 마시자!</div>
+        <div class="kelly">
+          <div class="head">
+            <div class="head-bottom"></div>
+          </div>
+          <div class="layer1"></div>
+          <div class="layer2"></div>
+          <div class="layer3"></div>
+          <div class="layer4"></div>
+          <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
